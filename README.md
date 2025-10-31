@@ -24,10 +24,10 @@
 
 | Page | Preview |
 | :----- | --------- |
-| **Homepage** | ![Homepage](/assets/homepage.png) |
-| **History Page** | ![History Page](/assets/history.png) |
-| **Members Page** | ![Members Page](/assets/members.png) |
-| **Discography Page** | ![Discography Page](/assets/discography.png) |
+| **Homepage** | ![Homepage](/assets/screenshots/homepage.png) |
+| **History Page** | ![History Page](/assets/screenshots/history.png) |
+| **Members Page** | ![Members Page](/assets/screenshots/members.png) |
+| **Discography Page** | ![Discography Page](/assets/screenshots/discography.png) |
 
 ---
 
