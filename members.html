@@ -3,87 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Members | One Direction</title>
+    <title>One Direction - Members</title>
     <link rel="shortcut icon" href="assets/1D.jpeg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #222;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* header */
+        header {
+            background-color: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 a {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: #f0c040;
+        }
+
+        /* main */
+        main {
+            margin: 40px 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 32px;
+            border-bottom: 3px solid #000;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+        }
+
+        /* members-grid */
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .member {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        .member img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #000;
+            margin: 0 auto 15px;
+        }
+        .member h3 {
+            font-size: 22px;
+            margin: 10px 0 5px;
+            color: #000;
+        }
+        .member span {
+            display: block;
+            font-size: 16px;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .member p {
+            font-size: 16px;
+            text-align: justify;
+            padding: 0 10px;
+            color: #333;
+        }
+
+        /* footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
-<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <!-- HEADER -->
-    <header style="background-color: black; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
-        <h1>
-            <a href="index.html" style="color: white; padding: 15px; font-size: 30px; font-weight: 800; text-decoration: none;">ONE DIRECTION</a>
-        </h1>
+<body>
+    <!-- header -->
+    <header>
+        <h1><a href="index.html">ONE DIRECTION</a></h1>
         
         <nav>
-            <ul style="display: flex; flex-direction: row; list-style: none; gap: 20px; margin-right: 20px;">
-                <li>
-                    <a href="history.html" style="color: white; font-size: 20px; font-weight: 600; text-decoration: none;">History</a>
-                </li>
-                <li>
-                    <a href="members.html" style="color: white; font-size: 20px; font-weight: 600; text-decoration: none;">Members</a>
-                </li>
-                <li>
-                    <a href="discography.html" style="color: white; font-size: 20px; font-weight: 600; text-decoration: none;">Discography</a>
-                </li>
+            <ul>
+                <li><a href="history.html">History</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="discography.html">Discography</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- MEMBERS -->
-        <section style="display: flex; flex-direction: column; gap: 60px; align-items: center;">
-            <!-- Harry Styles -->
-            <article id="harry" style="max-width: 80%; text-align: center; margin-top: 30px; border: 2px solid black; border-radius: 10px; padding: 20px;">
-                <img src="assets/Harry.jpg" alt="Harry Styles" style="border-radius: 50%; width: 250px; margin-bottom: 20px;">
-                <h2>Harry Styles</h2>
+        <h2>Meet the Members</h2>
 
-                <p style="font-size: 18px; text-align: justify;">
-                    <strong>Harry Edward Styles</strong> (born 1 February 1994) is an English singer, songwriter, and actor. Known for his charisma, unique fashion sense, and powerful vocals, he has become one of the most influential pop artists of his generation. He began his career in 2010 as part of <em>One Direction</em> after auditioning for <em>The X Factor UK</em>. Following the band’s hiatus in 2016, Styles released his debut solo album <strong>“Harry Styles” (2017)</strong>, featuring the hit single <em>“Sign of the Times.”</em> His follow-up albums <strong>“Fine Line” (2019)</strong> and <strong>“Harry’s House” (2022)</strong> received critical acclaim, with the latter winning the Grammy Award for Album of the Year.
+        <section class="members-grid">
+            <!-- Harry Styles -->
+            <article class="member">
+                <img src="assets/Harry.jpg" alt="Harry Styles">
+                <h3>Harry Styles</h3>
+                <span>Born: February 1, 1994</span>
+                <p>
+                    Harry Styles is a British singer, songwriter, and actor who rose to fame in the boy band One Direction before launching a successful solo career. Known for his diverse musical style that blends pop, rock, and soft rock, he has also starred in films like Dunkirk and Don't Worry Darling. Styles is also recognized for his flamboyant fashion sense and is a four-time Grammy winner.
                 </p>
             </article>
 
             <!-- Niall Horan -->
-            <article id="niall" style="max-width: 80%; text-align: center; margin-top: 30px; border: 2px solid black; border-radius: 10px; padding: 20px;">
-                <img src="assets/Niall.png" alt="Niall Horan" style="border-radius: 50%; width: 250px; margin-bottom: 20px;">
-                <h2>Niall Horan</h2>
-
-                <p style="font-size: 18px; text-align: justify;">
-                    <strong>Niall James Horan</strong> (born 13 September 1993) is an Irish singer-songwriter from Mullingar, County Westmeath. He gained fame as a member of <em>One Direction</em> and later pursued a successful solo career. In 2017, he released his debut album <strong>“Flicker”</strong>, featuring singles like <em>“This Town”</em> and <em>“Slow Hands.”</em> The album showcased a folk-pop sound influenced by classic rock and Americana. His second album <strong>“Heartbreak Weather”</strong> (2020) reached number one in Ireland and the UK, followed by <strong>“The Show”</strong> (2023), which reflected a more mature and soulful sound.
+            <article class="member">
+                <img src="assets/Niall.png" alt="Niall Horan">
+                <h3>Niall Horan</h3>
+                <span>Born: September 13, 1993</span>
+                <p>
+                    Niall Horan is an Irish singer-songwriter who rose to fame as a member of the band One Direction before launching a successful solo career. He is known for his guitar-playing, soft rock and pop music, and charismatic personality, often performing with instruments like the guitar and piano. Horan is also a coach on The Voice and has released three solo albums: Flicker (2017), Heartbreak Weather (2020), and The Show (2023). 
                 </p>
             </article>
             
             <!-- Liam Payne -->
-            <article id="liam" style="max-width: 80%; text-align: center; margin-top: 30px; border: 2px solid black; border-radius: 10px; padding: 20px;">
-                <img src="assets/Liam.jpg" alt="Liam Payne" style="border-radius: 50%; width: 250px; margin-bottom: 20px;">
-                <h2>Liam Payne</h2>
-
-                <p style="font-size: 18px; text-align: justify;">
-                    <strong>Liam James Payne</strong> (born 29 August 1993) is an English singer and songwriter. He first auditioned for <em>The X Factor</em> in 2008 and returned in 2010, where he became a member of <em>One Direction</em>. After the band went on hiatus, Payne signed with Capitol Records and began his solo career. His debut single <em>“Strip That Down”</em> (2017) became a global hit, reaching top charts worldwide. His first album, <strong>“LP1”</strong> (2019), featured collaborations with artists like Rita Ora and Quavo, blending pop and R&B influences.
+            <article class="member">
+                <img src="assets/Liam.jpg" alt="Liam Payne">
+                <h3>Liam Payne</h3>
+                <span>Born: August 19, 1993</span>
+                <p>
+                    Liam Payne was an English singer, songwriter, and member of the band One Direction. Born in 1993, he gained fame on The X Factor before the band's formation, and after the group's hiatus, he pursued a solo career with hits like "Strip That Down". He was known for his vocal and songwriting contributions and passed away in October 2024 at the age of 31. .
                 </p>
             </article>
 
             <!-- Louis Tomlinson -->
-            <article id="loius" style="max-width: 80%; text-align: center; margin-top: 30px; border: 2px solid black; border-radius: 10px; padding: 20px;">
-                <img src="assets/Louis.png" alt="Louis Tomlinson" style="border-radius: 50%; width: 250px; margin-bottom: 20px;">
-                <h2>Louis Tomlinson</h2>
-
-                <p style="font-size: 18px; text-align: justify;">
-                    <strong>Louis William Tomlinson</strong> (born 24 December 1991) is an English singer, songwriter, and record producer. Known for his distinctive voice and strong leadership within <em>One Direction</em>, Tomlinson took a thoughtful approach to his solo career. His debut album <strong>“Walls”</strong> (2020) showcased his Britpop influences, while his second album <strong>“Faith in the Future”</strong> (2022) reflected a more mature and introspective sound. Beyond music, Louis has served as a judge on <em>The X Factor</em> and continues to connect deeply with fans through his heartfelt lyrics.
+            <article class="member">
+                <img src="assets/Louis.png" alt="Louis Tomlinson">
+                <h3>Louis Tomlinson</h3>
+                <span>Born: December 24, 1991</span>
+                <p>
+                    Louis Tomlinson is an English singer-songwriter and actor, born on December 24, 1991, who first gained fame as a member of the boy band One Direction. After the band's hiatus, he launched a successful solo career, releasing two albums, Walls (2020) and Faith In The Future (2022), and appearing as an X Factor judge. 
                 </p>
             </article>
 
             <!-- Zayn Malik -->
-            <section style="max-width: 80%; text-align: center; margin-top: 30px; border: 2px solid black; border-radius: 10px; padding: 20px;">
-                <img src="assets/Zayn.jpg" alt="Zayn Malik" style="border-radius: 50%; width: 250px; margin-bottom: 20px;">
-                <h2>Zayn Malik</h2>
-
-                <p style="font-size: 18px; text-align: justify;">
-                    <strong>Zain Javadd Malik</strong> (born 12 January 1993) is a British singer and songwriter. Known for his smooth vocals and R&B-inspired sound, he was the first member to leave <em>One Direction</em> in <strong>March 2015</strong>. Malik began his solo career with the release of <strong>“Mind of Mine”</strong> (2016), featuring the chart-topping single <em>“Pillowtalk.”</em> He later explored diverse styles in albums like <strong>“Icarus Falls”</strong> (2018) and <strong>“Nobody Is Listening”</strong> (2021), showcasing his versatility and artistic depth.
+            <article class="member">
+                <img src="assets/Zayn.jpg" alt="Zayn Malik">
+                <h3>Zayn Malik</h3>
+                <span>Born: January 12, 1993</span>
+                <p>
+                    Zayn Malik is a British singer and songwriter who rose to fame as a member of the band One Direction before launching a successful solo career. Known for his R&B and pop music, he is recognized for his distinctive vocal style and fashion-forward image. His professional life includes a successful solo debut album, "Mind of Mine," and he has also engaged in fashion and acting projects. 
                 </p>
-            </section>
+            </article>
         </section>
     </main>
 
-    <footer style="background-color: black; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+    <footer>
         <p>&copy; 2025 One Direction Fan Page | Created by Hilmi Salsabilla</p>
     </footer>
 </body>
